@@ -8,8 +8,8 @@ Permite gestionar productos (alta, baja, edición y listado) conectando con **Mo
 ---
 
 ## 🧠 Objetivos del proyecto
-- Desarrollar un **backend completo** para la gestión de productos.  
-- Implementar un **CRUD completo** de productos con validaciones.  
+- Desarrollar un **backend completo** para la gestión de productos de un e-commerce.  
+- Implementar un **CRUD completo de productos** con validaciones: alta, baja, modificación y obtención de productos.  
 - Conectar con **MongoDB Atlas** usando Mongoose.  
 - Permitir integración con un frontend para consumo de la API.  
 - Aplicar buenas prácticas de desarrollo web y estructura escalable.  
