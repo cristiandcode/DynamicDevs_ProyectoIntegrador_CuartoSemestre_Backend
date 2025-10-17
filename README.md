@@ -19,7 +19,7 @@ Permite gestionar productos (alta, baja, edición y listado) conectando con **Mo
 
 ## 👨‍💻 Equipo de desarrollo
 
-| Rol | Nombre | Perfil |
+| Rol | Nombre | Perfiles |
 |-----|--------|--------|
 | Líder Técnico Backend | Diaz Cristian Ivan | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="16"/> [GitHub](https://github.com/cristiandcode) &nbsp; <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="16"/> [LinkedIn](https://www.linkedin.com/in/cristiandcode/) |
 
