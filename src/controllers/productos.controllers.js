@@ -82,4 +82,4 @@ export const borrarProducto = async (req, res) => {
     console.error(error);
     res.status(500).json({ mensaje: "Error al borrar el producto" });
   }
-}
+};
