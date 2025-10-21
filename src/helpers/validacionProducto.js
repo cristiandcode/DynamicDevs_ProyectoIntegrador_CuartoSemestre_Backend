@@ -27,6 +27,13 @@ const validacionProducto = [
         .withMessage(
           "La imagen debe ser una URL válida que termine en .jpg, .jpeg, .gif o .png"
         ),
+        check("categoria")
+        .notEmpty()
+        .withMessage("La categoría del producto es un dato obligatorio")
+        .isIn(["Infusiones", "Batidos", "Dulce", "Salado", "Sandwich"])
+        .withMessage(
+          "La categoría debe ser una de las siguientes: (Infusiones, Batidos, Dulce, Salado, Sandwich)"
+        ),
   //Aquí llamo a  resultadoValidacion
   (req, res, next) => resultadoValidacion(req, res, next),
 ];
