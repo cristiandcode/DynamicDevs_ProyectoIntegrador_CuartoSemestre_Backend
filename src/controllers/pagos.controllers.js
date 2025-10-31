@@ -1,9 +1,5 @@
 import { MercadoPagoConfig, Preference } from "mercadopago";
 
-// ⚠️ QUITA esto - ya se carga en index.js
-// import dotenv from 'dotenv';
-// dotenv.config();
-
 // Configurar cliente de Mercado Pago
 const client = new MercadoPagoConfig({
   accessToken: process.env.MP_ACCESS_TOKEN,
