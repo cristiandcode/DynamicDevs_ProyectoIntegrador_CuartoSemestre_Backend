@@ -1,6 +1,6 @@
 import { MercadoPagoConfig, Preference } from "mercadopago";
 import Pedido from '../database/models/pedidos.js';
-import { enviarMail } from '../helpers/enviarMail.js'; // ✅ Importamos la función de mails
+import { enviarMail } from '../helpers/enviarMail.js'; 
 
 // Configurar cliente de Mercado Pago
 const client = new MercadoPagoConfig({
