@@ -7,18 +7,18 @@ import {
   obtenerProducto,
 } from "../controllers/productos.controllers.js";
 import validacionProducto from "../helpers/validacionProducto.js";
-import verificarJWT from "../helpers/verificarJWT.js"
+import verificarJWT from "../helpers/verificarJWT.js";
+
 const router = Router();
 
-//crear las rutas
-router.route("/prueba").get(listarProductos);
-router
-  .route("/productos")
-  .post([verificarJWT, validacionProducto],crearProducto)
-  .get(listarProductos);
-router
-  .route("/productos/:id")
-  .get(obtenerProducto)
-  .put([verificarJWT, validacionProducto],editarProducto)
-  .delete(verificarJWT, borrarProducto);
+// Rutas sin duplicar "productos"
+router.route("/")
+  .get(listarProductos) // GET /api/productos
+  .post([verificarJWT, validacionProducto], crearProducto); // POST /api/productos
+
+router.route("/:id")
+  .get(obtenerProducto) // GET /api/productos/:id
+  .put([verificarJWT, validacionProducto], editarProducto) // PUT /api/productos/:id
+  .delete(verificarJWT, borrarProducto); // DELETE /api/productos/:id
+
 export default router;
