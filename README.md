@@ -23,6 +23,12 @@ Permite gestionar productos (alta, baja, edición y listado) conectando con **Mo
 | Rol | Nombre | GitHub | LinkedIn |
 |-----|--------|--------|----------|
 | Líder Técnico Backend | Diaz Cristian Ivan | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="16"/> [GitHub](https://github.com/cristiandcode)  | <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="16"/> [LinkedIn](https://www.linkedin.com/in/cristiandcode/) |
+| Desarrollador | Cortez Hector | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="16"/> [GitHub](https://github.com/CoraYako)  | <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="16"/> [LinkedIn](https://www.linkedin.com/in/hector-cortez-cy/) |
+| Desarrollador | Leytes Rodrigo | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="16"/> [GitHub](https://github.com/Roddri19)  | <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="16"/> [LinkedIn](https://www.linkedin.com/in/rodrigoleytes/) |
+| Desarrollador | Gimenez Miqueas | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="16"/> [GitHub](https://github.com/miquigz)  | <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="16"/> [LinkedIn](https://www.linkedin.com/in/miqueasgimenez/) |
+| Desarrollador | Paz Ezequiel | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="16"/> [GitHub]()  | <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="16"/> [LinkedIn]() |
+| Desarrollador | Diaz Federico | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="16"/> [GitHub]()  | <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="16"/> [LinkedIn]() |
+| Desarrollador | Vignati Mauro | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="16"/> [GitHub]()  | <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="16"/> [LinkedIn]() |
 
 
 ---
@@ -52,9 +58,11 @@ Permite gestionar productos (alta, baja, edición y listado) conectando con **Mo
 
 ---
 
+
+
 ## 📫 Contacto
 
-**Diaz Cristian Ivan – Líder Técnico Backend - Frontend**  
+**Diaz Cristian Ivan – Líder Técnico Backend - Frontend - Responsable del proyecto**  
 - [LinkedIn](https://www.linkedin.com/in/cristiandcode/)  
 - [GitHub](https://github.com/cristiandcode)
 
