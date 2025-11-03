@@ -32,6 +32,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 // SDK de Mercado Pago
 import { MercadoPagoConfig, Preference } from "mercadopago";
+import { registrarPedidoEfectivo } from "./src/controllers/pagos.controllers.js";
 // Agrega credenciales
 const client = new MercadoPagoConfig({
   accessToken: process.env.MP_ACCESS_TOKEN,
@@ -78,7 +79,7 @@ app.use("/api/pagos", pagoRouter);
 
 // Ruta de prueba
 app.get("/", (req, res) => {
-  res.send("Servidor de ChocoDevs Backend funcionando 🚀");
+  res.send("Servidor de Panadería Backend funcionando 🚀");
 });
 
 // Iniciar servidor
