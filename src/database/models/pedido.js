@@ -2,13 +2,13 @@ import mongoose, { Schema } from "mongoose";
 
 const pedidoSchema = new Schema({
   usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "usuario",
-    required: true
+    type: Schema.Types.ObjectId,
+    ref: 'usuario',
+    default: null
   },
   productos: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "producto",
+    type: Schema.Types.ObjectId,
+    ref: 'producto',
     required: true
   }],
   total: {
@@ -16,21 +16,22 @@ const pedidoSchema = new Schema({
     required: true,
     min: 0
   },
-  fechaCreacion: {
-    type: Date,
-    default: Date.now
-  },
   metodoPago: {
     type: String,
-    enum: ['TARJETA_CREDITO', 'TARJETA_DEBITO', 'EFECTIVO', 'BILLETERA_VIRTUAL'],
-    required: true
+    required: true,
+    enum: ['MERCADOPAGO', 'EFECTIVO']
   },
   estado: {
     type: String,
-    enum: ['PENDIENTE', 'PAGADO', 'CANCELADO'],
-    default: 'PENDIENTE'
+    required: true,
+    enum: ['PENDIENTE_RETIRO', 'COMPLETADO', 'CANCELADO'],
+    default: 'PENDIENTE_RETIRO'
+  },
+  fechaCreacion: {
+    type: Date,
+    default: Date.now
   }
 });
 
-const Pedido = mongoose.model("pedido", pedidoSchema);
+const Pedido = mongoose.model('pedido', pedidoSchema);
 export default Pedido;
