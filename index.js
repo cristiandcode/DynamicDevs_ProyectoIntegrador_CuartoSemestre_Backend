@@ -13,8 +13,6 @@ import pagoRouter from "./src/routes/pagos.routes.js";
 
 dotenv.config();
 
-console.log('🎯 Puerto:', process.env.PORT);
-console.log('🔑 MP Token:', process.env.MP_ACCESS_TOKEN ? '✅ Cargado' : '❌ No cargado');
 
 const app = express();
 const PORT = process.env.PORT || 4001;
@@ -42,11 +40,6 @@ import { registrarPedidoEfectivo } from "./src/controllers/pagos.controllers.js"
 // Agrega credenciales
 const client = new MercadoPagoConfig({
   accessToken: process.env.MP_ACCESS_TOKEN,
-});
-
-//Routes Ping
-app.get("/ping", (req, res) => {
-  res.send("Pong 🏓");
 });
 
 // Route to create preference mp
