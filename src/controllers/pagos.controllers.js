@@ -27,11 +27,11 @@ export const createPreference = async (req, res) => {
           unit_price: Number(item.precio || item.unit_price),
           currency_id: "ARS",
         })),
-        back_urls: {
-          success: "http://localhost:5173/success",
-          failure: "http://localhost:5173/failure",
-          pending: "http://localhost:5173/pending",
-        },
+                back_urls: {
+            success: "https://chocodevs.netlify.app/success",
+            failure: "https://chocodevs.netlify.app/failure",
+            pending: "https://chocodevs.netlify.app/pending",
+          },
         payment_methods: {
           excluded_payment_types: [],
           installments: 12,
@@ -41,11 +41,12 @@ export const createPreference = async (req, res) => {
 
     console.log("✅ Preferencia creada exitosamente. ID:", response.id);
 
-    // ✅ Enviar mail cuando se crea la preferencia de Mercado Pago
+    // ✅ Enviar mail con detalle de productos
     try {
       await enviarMail({
         subject: 'Nueva compra con Mercado Pago',
-        text: `Se ha realizado un nuevo pedido por Mercado Pago. \nTotal: $${items.reduce((acc, i) => acc + i.precio * i.cantidad, 0)}\nProductos: ${items.map(i => i.nombreProducto).join(', ')}`
+        items,
+        metodoPago: 'MP'
       });
     } catch (err) {
       console.error('❌ Error enviando mail de Mercado Pago:', err.message);
@@ -86,11 +87,12 @@ export const registrarPedidoEfectivo = async (req, res) => {
 
     console.log('✅ Pedido en efectivo registrado:', nuevoPedido._id);
 
-    // ✅ Enviar mail para compras en efectivo (retiro en local)
+    // ✅ Enviar mail con detalle de productos
     try {
       await enviarMail({
         subject: 'Nuevo pedido para retirar en local',
-        text: `Se ha registrado un pedido para retiro en local. \nTotal: $${total}\nProductos: ${items.map(i => i.nombreProducto).join(', ')}`
+        items,
+        metodoPago: 'EFECTIVO'
       });
     } catch (err) {
       console.error('❌ Error enviando mail de pedido en efectivo:', err.message);
